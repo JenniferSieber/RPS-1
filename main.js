@@ -171,5 +171,7 @@ playAgain.addEventListener("click", () => {
 document.querySelector(".clear-all").addEventListener("click", () => {
     userScore.textContent = 0;
     botScore.textContent = 0;
+    userWin = 0;
+    botWin = 0;
     reset();
 });
