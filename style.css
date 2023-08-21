@@ -1,0 +1,181 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  background: rgb(63, 59, 85);
+  color: white;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(101, 78, 226);
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 2rem;
+  color: rgb(228, 52, 96);
+  text-transform: uppercase;
+  background:rgba(180, 169, 245,.4);
+}
+
+button {
+  all: initial;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: .5rem 1rem;
+  margin: 1rem;
+  border-radius: 3px;
+  
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.status-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  margin: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.score span {
+  color: rgb(228, 52, 96);
+}
+
+.start {
+  background: rgb(101, 78, 226);
+}
+
+.start:hover {
+  background: rgb(180, 169, 245);
+}
+.play-again {
+  background: rgb(147, 130, 243);
+}
+
+.play-again:hover {
+  background: rgb(101, 78, 226);
+}
+
+.game-choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.choice, .computer-choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+}
+
+.choice {
+  background:#f0f0f0;
+  width: 11rem;
+  height: 11rem;
+  margin: 1rem;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.rock {
+  background-image: url("./imgs/ben-karpinski-ctWw2S9VqOI-unsplash.jpg");
+}
+
+.paper {
+  background-image: url("./imgs/absolutvision-WYd_PkCa1BY-unsplash.jpg");
+}
+
+.scissors {
+  background-image: url("./imgs/naomi-o-hare-ZxrKugW-6Eg-unsplash.jpg");
+}
+
+.computer-choice-title {
+  text-align: center;
+}
+
+.computer-choice {
+  width: 25rem;
+  height: 15rem;
+  background-position: center;
+  color: #f0f0f0;
+}
+
+.clear-all {
+  background: rgb(226, 115, 143);
+  margin: 2rem;
+}
+
+.clear-all:hover {
+  background: rgb(228, 52, 96);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+a {
+  color:rgb(101, 78, 226);
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(228, 52, 96);
+}
+
+.hidden {
+  display: none;
+}
+
+.enlarge {
+  width: 25rem;
+  height: 15rem;
+  cursor: initial;
+}

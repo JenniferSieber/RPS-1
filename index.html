@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+  </header>
+
+  <main class="game-board">
+    <section class="status">
+      <h2 id="status-msg" class="status">       
+      </h2>
+    </section>
+    <section class="status-box">
+      <div class="playerScore">
+        <h2 class="score">Player: 
+          <span class="user-tally">0</span>
+        </h2>
+      </div>
+
+      <div class="botScore">
+        <h2 class="score">Bot: 
+          <span class="bot-tally">0</span>
+        </h2>
+      </div>
+
+      <div class="buttons">
+        <button class="btn start">Start Game</button>
+        <button class="btn play-again hidden">Play Again</button>
+      </div>
+    </section>
+   
+    <section class="game-choices">
+      <div class="rock choice" value="rock">
+        <h3 value="rock">Rock</h3>
+        <!-- background img in CSS -->
+      </div>
+      <div class="paper choice" value="paper">
+        <h3 value="paper">Paper</h3>
+        <!-- background img in CSS -->
+      </div>
+      <div class="scissors choice" value="scissors">
+        <h3 value="scissors">Scissors</h3>
+        <!-- background img in CSS -->
+      </div>
+    </section>
+  </main>
+
+  <section class="computer-choices hidden">
+    <div class="computer-choice">
+      <h3 class="computer-choice-title" value="bot-choice"></h3>
+      <!-- dynamic background img -->
+    </div> 
+    <div>
+      
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="buttons"> 
+      <button class="btn clear-all">Clear All</button>
+    </div>
+    <div>
+      <a href="https://jennifersieber.netlify.app/" target="_blank">JenWebDev &copy;2023</a>
+    </div>
+  </footer>
+</body>
+</html>
