@@ -141,7 +141,6 @@ class Option {
 startBtn.addEventListener("click", () => {
   if (running == false) {
     running = true;
-
     startBtn.classList.add("hidden");
     playAgain.classList.remove("hidden");
     const click = new Option(choices);
