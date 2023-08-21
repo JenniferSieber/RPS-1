@@ -169,9 +169,7 @@ playAgain.addEventListener("click", () => {
 });
 
 document.querySelector(".clear-all").addEventListener("click", () => {
-  if (running) {
     userScore.textContent = 0;
     botScore.textContent = 0;
     reset();
-  }
 });
